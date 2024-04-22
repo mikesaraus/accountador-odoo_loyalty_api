@@ -3,20 +3,16 @@ services:
     image: node:18.20.2-alpine3.19
     container_name: odoo_loyalty_api
     restart: always
-    networks:
-      - nginx_network
-      - testing_network
+    # networks:
+    #   - nginx_network
+    #   - client_network
     entrypoint: sh
     working_dir: /usr/src/app
     volumes:
       - ./app:/usr/src/app
     command: ['-c', 'if [ ! -d node_modules ]; then yarn; fi && yarn start']
-
-networks:
-  nginx_network:
-    external: true
-  testing_network:
-    external: true
-
-volumes:
-  postgres_data:
+# networks:
+#   nginx_network:
+#     external: true
+#   client_network:
+#     external: true

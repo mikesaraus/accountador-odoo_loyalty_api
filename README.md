@@ -10,3 +10,5 @@
 - `DB_USER` - the database user
 - `DB_PWD` - the database password of the user
 - `PORT` - the port used by express js
+
+### Configure docker networks
