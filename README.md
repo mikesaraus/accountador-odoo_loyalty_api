@@ -12,3 +12,9 @@
 - `PORT` - the port used by express js
 
 ### Configure docker networks
+
+#### Endpoint
+
+```
+GET: /api/loyalty?card_id={loyalty_card_id}
+```
